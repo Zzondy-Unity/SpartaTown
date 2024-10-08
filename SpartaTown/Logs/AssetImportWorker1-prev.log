@@ -1,0 +1,417 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.17f1 (4fc78088f837) revision 5228416'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16338 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2022.3.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/zzondy/Git/SpartaTown/SpartaTown
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52642
+Successfully changed project path to: D:/zzondy/Git/SpartaTown/SpartaTown
+D:/zzondy/Git/SpartaTown/SpartaTown
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [5784] Host "[IP] 59.11.104.19 [Port] 0 [Flags] 2 [Guid] 829251673 [EditorId] 829251673 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1R6G4V3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [5784] Host "[IP] 59.11.104.19 [Port] 0 [Flags] 2 [Guid] 829251673 [EditorId] 829251673 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1R6G4V3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 13.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path D:/Unity/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/zzondy/Git/SpartaTown/SpartaTown/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
+    Vendor:   NVIDIA
+    VRAM:     8073 MB
+    Driver:   31.0.15.4584
+Initialize mono
+Mono path[0] = 'D:/Unity/2022.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005887 seconds.
+- Loaded All Assemblies, in  0.398 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.309 seconds
+Domain Reload Profiling: 706ms
+	BeginReloadAssembly (138ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (152ms)
+		LoadAssemblies (137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (132ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (309ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (241ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.757 seconds
+Refreshing native plugins compatible for Editor in 4.44 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.824 seconds
+Domain Reload Profiling: 1579ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (478ms)
+		LoadAssemblies (395ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (148ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (825ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (638ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (469ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.24 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4035 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (244.7 KB). Loaded Objects now: 4490.
+Memory consumption went from 145.7 MB to 145.5 MB.
+Total: 3.590600 ms (FindLiveObjects: 0.305200 ms CreateObjectMapping: 0.252100 ms MarkObjects: 2.827800 ms  DeleteObjects: 0.204500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 723357.480856 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Player.png
+  artifactKey: Guid(ec47f75fe8aff1644ac73998f4ad31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Player.png using Guid(ec47f75fe8aff1644ac73998f4ad31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '376a99a57628359d99551b6cf369ccd7') in 0.109742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Struct.png
+  artifactKey: Guid(dda6bbdb704d84847b38f9eced72bf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Struct.png using Guid(dda6bbdb704d84847b38f9eced72bf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24877d7a31ebe82e0d332698a03cee4') in 0.065170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png
+  artifactKey: Guid(a07735877a3bd644094331b137b71878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png using Guid(a07735877a3bd644094331b137b71878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a3975eff5630b924e8ab442466ffa3') in 0.123125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png
+  artifactKey: Guid(8501e10b1eafde34586080ba342fdc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png using Guid(8501e10b1eafde34586080ba342fdc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87bdd8d67ff03f3e6ee3affba93dcc6') in 0.044908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow.png
+  artifactKey: Guid(ed7554aeefd5da44a9fe1ee9b93afe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Texture/TX Shadow.png using Guid(ed7554aeefd5da44a9fe1ee9b93afe77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f06dec95c2a0f6dab4b0c44353de54') in 0.114627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 38.371894 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass B.prefab
+  artifactKey: Guid(2d546d2d8b016864ab41e2185c250eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass B.prefab using Guid(2d546d2d8b016864ab41e2185c250eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e5ab7df20e202b992bd88277251529') in 0.064961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass O.prefab
+  artifactKey: Guid(bf462882706828c44a4465986b6fb8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass O.prefab using Guid(bf462882706828c44a4465986b6fb8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f142439c09ac06439d0a19e4d84dd6') in 0.012370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass F.prefab
+  artifactKey: Guid(84d669757910f1f488023c92e71fcad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass F.prefab using Guid(84d669757910f1f488023c92e71fcad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998e0bdbf0836ed14dd87d5fa041fa74') in 0.012924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass J.prefab
+  artifactKey: Guid(dbeab85cbe3b90b41a444794aab794ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass J.prefab using Guid(dbeab85cbe3b90b41a444794aab794ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5884c8728d5e076724c72cc86e392818') in 0.014101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Props Bush T1.prefab
+  artifactKey: Guid(a0a71fda412ad0941ab44f1732ea4c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Props Bush T1.prefab using Guid(a0a71fda412ad0941ab44f1732ea4c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5985257ef4810b603a338898edfdc4a5') in 0.062808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass N.prefab
+  artifactKey: Guid(af67ceadc087899479232f75d2b79d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass N.prefab using Guid(af67ceadc087899479232f75d2b79d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b297056f1efe93d1493bd0e787803535') in 0.011761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass H.prefab
+  artifactKey: Guid(8c66149e58003104daf96668db118b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass H.prefab using Guid(8c66149e58003104daf96668db118b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae76f8aeb7ebc97a5e4e5e79d7b798eb') in 0.011608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass L.prefab
+  artifactKey: Guid(1dc4948f20ddc324f84c815af63aa6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Grass L.prefab using Guid(1dc4948f20ddc324f84c815af63aa6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c913c0855ba6ce3406d93747b7c6c5fd') in 0.012101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Props Tree T1.prefab
+  artifactKey: Guid(f681a54372d73d74785b9c9d4ac477e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Plant/PF Props Tree T1.prefab using Guid(f681a54372d73d74785b9c9d4ac477e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7117eff8659091a4742f0109459b0365') in 0.014386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 5.149318 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Altar.prefab
+  artifactKey: Guid(c5bdca1933fde624698bb8c6d6daa44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Altar.prefab using Guid(c5bdca1933fde624698bb8c6d6daa44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff26c3a3c96dca2326bab8537028be0b') in 0.016257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Chest Open.prefab
+  artifactKey: Guid(17b0c1ef334d17e4bbb74c4778001705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Chest Open.prefab using Guid(17b0c1ef334d17e4bbb74c4778001705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442000089d6afad70e8c8cf0bc4d0871') in 0.013238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot C.prefab
+  artifactKey: Guid(f3cc2373308c11848977b28d974a9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pot C.prefab using Guid(f3cc2373308c11848977b28d974a9de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d185e5d9675e13813e36c9e8828c3f') in 0.014060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair Broken L.prefab
+  artifactKey: Guid(6bc7a266104dec640a8bc2ab2e5cd968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair Broken L.prefab using Guid(6bc7a266104dec640a8bc2ab2e5cd968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191598ffde353883fdfa5a0031633924') in 0.014395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T1.prefab
+  artifactKey: Guid(ebdc6ef285e0bf542bed7e9c1bfb9923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T1.prefab using Guid(ebdc6ef285e0bf542bed7e9c1bfb9923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0596ac74376447b53dd7779bc48b68a') in 0.013251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Gravestone C.prefab
+  artifactKey: Guid(3fcd8726c7cd53345947949baefbab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Gravestone C.prefab using Guid(3fcd8726c7cd53345947949baefbab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef093345847a2d74734cbfb21bd4fd64') in 0.017554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Rune Pillar X3.prefab
+  artifactKey: Guid(4fad9c4de6b725a43bb1200ed9479c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Rune Pillar X3.prefab using Guid(4fad9c4de6b725a43bb1200ed9479c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b39a2b261a3b831fd31a3b270da7a5') in 0.014987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pillar.prefab
+  artifactKey: Guid(41ea6afb203377e42995d7d016ea5907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Pillar.prefab using Guid(41ea6afb203377e42995d7d016ea5907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a77fe5005b0a8b6504049367670a5e') in 0.013606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair Broken R.prefab
+  artifactKey: Guid(b7a5fce6e52ebbf488a8e8516c6692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair Broken R.prefab using Guid(b7a5fce6e52ebbf488a8e8516c6692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8909821635c1562cec1b8a028c1fdd0b') in 0.014214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Crate.prefab
+  artifactKey: Guid(fb2df5b680b64b449a78162ebcd98e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Crate.prefab using Guid(fb2df5b680b64b449a78162ebcd98e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c65fa48043309e2a553cd33ecf0a3b1') in 0.014810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Road Sign W.prefab
+  artifactKey: Guid(5c635e5bc09c93043a53ee0e17e89d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Road Sign W.prefab using Guid(5c635e5bc09c93043a53ee0e17e89d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd837d296cec2311017be53cbb6d09539') in 0.012721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 1.178957 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone Cube.prefab
+  artifactKey: Guid(f6a5710827e32d3489da2c249e3bc400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone Cube.prefab using Guid(f6a5710827e32d3489da2c249e3bc400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c6f82644afc7dcbe98fd1119966b15') in 0.012494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T6.prefab
+  artifactKey: Guid(d5762f992ea3bd544bb8287f66e8f844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T6.prefab using Guid(d5762f992ea3bd544bb8287f66e8f844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f562cb6ad85845fffe1e15527d86b72b') in 0.013896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T1.prefab
+  artifactKey: Guid(6d69371a87148ee4dac7b2b814437ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T1.prefab using Guid(6d69371a87148ee4dac7b2b814437ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6b6cfde6ad06f76f20f9760f1cc764') in 0.012613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 4.624981 seconds.
+  path: Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Wooden Gate Opened.prefab
+  artifactKey: Guid(8e9c401d7a70ec94d956296ea011f594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cainos/Pixel Art Top Down - Basic/Prefab/Props/PF Props Wooden Gate Opened.prefab using Guid(8e9c401d7a70ec94d956296ea011f594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea93673214be77fc28b0f2917ee21205') in 0.013666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
