@@ -22,8 +22,9 @@ public class AimRotation : MonoBehaviour
         //내 기준 내 마우스가 있는 방향의 벡터를 normalized한 값을 받았다.
 
 
-        
+
         float rotZ = Mathf.Atan2(vector.y, vector.x) * Mathf.Rad2Deg;
-        SpriteRenderer.flipX = rotZ > 90;
+
+        SpriteRenderer.flipX = Mathf.Abs(rotZ) > 90;
     }
 }

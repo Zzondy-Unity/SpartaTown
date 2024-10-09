@@ -1,10 +1,11 @@
+using Cinemachine.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerInputController : TopDownController
 {
     private Camera _camera;
-
+    private Vector2 previousAim = Vector2.zero;
     protected override void Awake()
     {
         base.Awake();
@@ -26,7 +27,9 @@ public class PlayerInputController : TopDownController
 
         if(newAim.magnitude >= .9f)
         {
-            CallLookEvent(newAim);
+            //에임의 전 위치를 지정해두고 현위치와 그 절반의 값을 주는것으로 좀더 부드러운 회전
+            CallLookEvent(Vector2.Lerp(previousAim, newAim, 0.5f));
+            previousAim = newAim;
         }
     }
 
@@ -36,21 +39,4 @@ public class PlayerInputController : TopDownController
         CallAttackEvent();
     }
 
-    public void OnJump()
-    {
-        //점프
-        CallJumpEvent();
-    }
-
-    public void OnBlock()
-    {
-        //방어
-        CallBloackEvent();
-    }
-
-    public void OnRoll()
-    {
-        //구르기
-        CallRollEvent();
-    }
 }

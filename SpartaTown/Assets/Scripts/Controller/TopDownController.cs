@@ -8,9 +8,6 @@ public class TopDownController : MonoBehaviour
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
     public event Action OnAttackEvent;
-    public event Action OnJumpEvent;
-    public event Action OnRollEvent;
-    public event Action OnBlockEvent;
 
     protected virtual void Awake()
     {
@@ -32,19 +29,5 @@ public class TopDownController : MonoBehaviour
         OnAttackEvent?.Invoke();
     }
 
-    public void CallJumpEvent()
-    {
-        OnJumpEvent?.Invoke();
-    }
-
-    public void CallRollEvent()
-    {
-        OnRollEvent?.Invoke();
-    }
-    
-    public void CallBloackEvent()
-    {
-        OnBlockEvent?.Invoke();
-    }
 
 }
