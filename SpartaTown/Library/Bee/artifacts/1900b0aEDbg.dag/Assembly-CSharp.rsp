@@ -388,9 +388,13 @@
 "Assets/Scripts/Controller/TopDownController.cs"
 "Assets/Scripts/Entities/Behaviour/AimRotation.cs"
 "Assets/Scripts/Entities/Behaviour/Movement.cs"
+"Assets/Scripts/Entities/Behaviour/PlayerAction.cs"
+"Assets/Scripts/Entities/Data/ObjData.cs"
 "Assets/Scripts/Entities/Stat/PlayerStatHandler.cs"
 "Assets/Scripts/Entities/Stat/Stat.cs"
 "Assets/Scripts/Manager/GameManager.cs"
+"Assets/Scripts/Manager/ScanManager.cs"
+"Assets/Scripts/Manager/UIManager.cs"
 -langversion:9.0
 
 /deterministic

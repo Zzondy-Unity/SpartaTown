@@ -14,6 +14,12 @@ public class HUDController : MonoBehaviour
     private void Start()
     {
         playerName = GameManager.Instance.userName;
-        nameText.text = playerName;
+        ChnageName(playerName);
+    }
+
+    public void ChnageName(string newName)
+    {
+        playerName = newName;
+        nameText.text = newName;
     }
 }

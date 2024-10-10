@@ -3,9 +3,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] private UIManager uiManager;
+    
     private PlayerInputController controller;
     private Rigidbody2D rgbody;
-    private StatHandler statHandler;
+    private PlayerStatHandler statHandler;
+    private PlayerAction playerAction;
 
     private Vector2 movementdirection = Vector2.zero;
 
@@ -13,7 +16,8 @@ public class Movement : MonoBehaviour
     {
         controller = GetComponent<PlayerInputController>();
         rgbody = GetComponent<Rigidbody2D>();
-        statHandler = GetComponent<StatHandler>();
+        statHandler = GetComponent<PlayerStatHandler>();
+        playerAction = GetComponent<PlayerAction>();
     }
 
     private void Start()
@@ -23,10 +27,17 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        ApplyMoveDirection(movementdirection);
+        if(playerAction.isAction || uiManager.isMenu)
+        {
+            rgbody.velocity = Vector2.zero;
+        }
+        else
+        {
+            ApplyMoveDirection(movementdirection);
+        }
     }
 
-    private void Move(Vector2 direction)
+    public void Move(Vector2 direction)
     {
         movementdirection = direction;
 

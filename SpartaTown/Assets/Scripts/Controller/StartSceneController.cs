@@ -1,5 +1,4 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -52,6 +51,7 @@ public class StartSceneController : MonoBehaviour
     private void GoTown()
     {
         GameManager.Instance.GameStart(playerName, inputid);
+        GameManager.Instance.TimeReset();
     }
 
 }

@@ -17,7 +17,7 @@ public class CharacterAnimationController : AnimationController
 
     protected void OnEnable()
     {
-        animator.runtimeAnimatorController = animCon[GameManager.Instance.jobId];
+        CharacterAnimation(GameManager.Instance.jobId);
     }
 
     private void Start()
@@ -28,5 +28,10 @@ public class CharacterAnimationController : AnimationController
     private void Move(Vector2 vector)
     {
         animator.SetBool(isWalk, vector.magnitude > magnitutueThreshold);
+    }
+
+    public void CharacterAnimation(int jobId)
+    {
+        animator.runtimeAnimatorController = animCon[jobId];
     }
 }

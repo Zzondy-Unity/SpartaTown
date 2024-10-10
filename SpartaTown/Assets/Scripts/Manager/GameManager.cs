@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
 
+    private Text timetxt;
+    private float currenttime;
+
     public string userName = "";
     public int jobId = 0;
 
@@ -43,10 +46,36 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    private void Update()
+    {
+        currenttime += Time.deltaTime;
+        if(timetxt != null)
+        {
+            TimeSpan time = TimeSpan.FromSeconds(currenttime);
+            timetxt.text = string.Format("{0:D2}:{1:D2}", time.Minutes, time.Seconds);
+        }
+    }
+
+
+    public void SetTimeTxt(Text newTimeTxt)
+    {
+        timetxt = newTimeTxt;
+    }
+
+    public void TimeReset()
+    {
+        currenttime = 0;
+    }
+
     public void GameStart(string playerName, int playerid)
     {
         userName = playerName;
         jobId = playerid;
         SceneManager.LoadScene("TownScene");
     }
+
+
+
+
 }

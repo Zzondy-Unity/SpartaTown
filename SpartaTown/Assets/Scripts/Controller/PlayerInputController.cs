@@ -6,6 +6,7 @@ public class PlayerInputController : TopDownController
 {
     private Camera _camera;
     private Vector2 previousAim = Vector2.zero;
+
     protected override void Awake()
     {
         base.Awake();
