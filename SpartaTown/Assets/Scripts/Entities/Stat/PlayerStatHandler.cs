@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerStatHandler : MonoBehaviour
+public class StatHandler : MonoBehaviour
 {
     [SerializeField] Stat baseStat;
 
@@ -13,7 +13,9 @@ public class PlayerStatHandler : MonoBehaviour
 
     private void UpdateCharacterStat()
     {
-        CurrentStat.name = baseStat.name;
+        CurrentStat = new Stat();
+
+        CurrentStat.name = GameManager.Instance.name;
         CurrentStat.maxHP = baseStat.maxHP;
         CurrentStat.speed = baseStat.speed;
     }

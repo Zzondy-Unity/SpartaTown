@@ -5,6 +5,7 @@ public class Movement : MonoBehaviour
 {
     private PlayerInputController controller;
     private Rigidbody2D rgbody;
+    private StatHandler statHandler;
 
     private Vector2 movementdirection = Vector2.zero;
 
@@ -12,6 +13,7 @@ public class Movement : MonoBehaviour
     {
         controller = GetComponent<PlayerInputController>();
         rgbody = GetComponent<Rigidbody2D>();
+        statHandler = GetComponent<StatHandler>();
     }
 
     private void Start()
@@ -34,7 +36,7 @@ public class Movement : MonoBehaviour
 
     private void ApplyMoveDirection(Vector2 direction)
     {
-        direction = direction * 5;
+        direction = direction * statHandler.CurrentStat.speed;
 
         rgbody.velocity = direction;
     }

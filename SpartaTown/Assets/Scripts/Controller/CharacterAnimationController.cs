@@ -17,7 +17,7 @@ public class CharacterAnimationController : AnimationController
 
     protected void OnEnable()
     {
-        animator.runtimeAnimatorController = animCon[GameManager.Instance.playerid];
+        animator.runtimeAnimatorController = animCon[GameManager.Instance.jobId];
     }
 
     private void Start()

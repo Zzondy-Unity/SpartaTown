@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
-    public int playerid;
+
+    public string userName = "";
+    public int jobId = 0;
 
     public static GameManager Instance
     {
@@ -39,10 +43,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnCharacterBtnClicked(int id)
+    public void GameStart(string playerName, int playerid)
     {
+        userName = playerName;
+        jobId = playerid;
         SceneManager.LoadScene("TownScene");
-        playerid = id;
     }
-
 }

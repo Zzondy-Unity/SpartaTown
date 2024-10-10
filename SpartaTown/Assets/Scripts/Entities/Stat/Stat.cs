@@ -8,8 +8,8 @@ using UnityEngine;
 public class Stat
 {
     [Header("PlayStat")]
+
     public string name;
-    public int playerid;
-    public float speed;
-    public float maxHP;
+    [Range(1, 20f)] public float speed;
+    [Range(1, 100f)] public float maxHP;
 }
