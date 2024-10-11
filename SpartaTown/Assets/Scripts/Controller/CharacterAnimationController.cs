@@ -27,6 +27,7 @@ public class CharacterAnimationController : AnimationController
 
     private void Move(Vector2 vector)
     {
+        if(this.CompareTag("Player"))
         animator.SetBool(isWalk, vector.magnitude > magnitutueThreshold);
     }
 

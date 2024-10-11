@@ -1,23 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;   
+using UnityEngine.UI;
 
 public class PlayerAction : MonoBehaviour
 {
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private Text dialogTxt;
 
-    public bool isAction;
-
-    private GameObject scanObject;
+    public int dialogIndex = 0;
+    public GameObject scaned;
 
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            scanObject = ScanManager.Instance.Scan(transform.position);
-            if(scanObject != null)
+            GameObject scanObject = ScanManager.Instance.Scan(transform.position);
+            if (scanObject != null)
             {
                 Action(scanObject);
             }
@@ -27,18 +26,35 @@ public class PlayerAction : MonoBehaviour
 
     public void Action(GameObject scanObj)
     {
-        if (isAction)
+        scaned = scanObj;
+        ObjData objData = scanObj.GetComponentInParent<ObjData>();
+
+        if (objData != null)
+            Talk(objData.id, objData.isNpc);
+
+        dialogPanel.SetActive(GameManager.Instance.isAction);
+    }
+
+    public void Talk(int id, bool isNpc)
+    {
+        string dialog = DialogManager.GetDialogs(id, dialogIndex);
+
+        if (dialog == null)
         {
-            dialogPanel.SetActive(false);
-            isAction = false;
+            GameManager.Instance.isAction = false;
+            dialogIndex = 0;
+            return;
+        }
+
+        if (isNpc)
+        {
+            dialogTxt.text = dialog;
         }
         else
         {
-            dialogPanel.SetActive(true);
-            isAction = true;
-            scanObject = scanObj;
-            dialogTxt.text = scanObject.name;
+            dialogTxt.text = "말을하지않는물체";
         }
-        dialogPanel.SetActive(isAction);
+        GameManager.Instance.isAction = true;
+        dialogIndex++;
     }
 }

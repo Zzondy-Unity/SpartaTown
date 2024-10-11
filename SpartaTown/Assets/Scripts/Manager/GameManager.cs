@@ -8,12 +8,14 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
+    public Transform Player { get; private set; }
 
     private Text timetxt;
-    private float currenttime;
 
     public string userName = "";
     public int jobId = 0;
+    public bool isMenu = false;
+    public bool isAction = false;
 
     public static GameManager Instance
     {
@@ -35,7 +37,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -49,23 +53,24 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        currenttime += Time.deltaTime;
         if(timetxt != null)
         {
-            TimeSpan time = TimeSpan.FromSeconds(currenttime);
-            timetxt.text = string.Format("{0:D2}:{1:D2}", time.Minutes, time.Seconds);
+            DateTime now = DateTime.Now;
+            timetxt.text = string.Format("{0:D2}:{1:D2}:{2:D2}", now.Hour, now.Minute, now.Second);
         }
+
+        //currenttime += Time.deltaTime;
+        //if(timetxt != null)
+        //{
+        //    TimeSpan time = TimeSpan.FromSeconds(currenttime);
+        //    timetxt.text = string.Format("{0:D2}:{1:D2}", time.Minutes, time.Seconds);
+        //}
     }
 
 
     public void SetTimeTxt(Text newTimeTxt)
     {
         timetxt = newTimeTxt;
-    }
-
-    public void TimeReset()
-    {
-        currenttime = 0;
     }
 
     public void GameStart(string playerName, int playerid)

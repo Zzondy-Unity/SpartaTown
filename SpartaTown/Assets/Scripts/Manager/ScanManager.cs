@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScanManager : MonoBehaviour            //스캔은 전투와 대화 등 너무 많은곳에서 사용할 것 같아서 싱글톤작업
+public class ScanManager : MonoBehaviour            //스캔은 전투와 대화 등 너무 많은곳에서 사용할 것 같아서
 {
     private static ScanManager instance;
     public static ScanManager Instance
@@ -30,6 +30,16 @@ public class ScanManager : MonoBehaviour            //스캔은 전투와 대화 등 너무
     private void Awake()
     {
         controller = GameObject.Find("Player").GetComponent<PlayerInputController>();
+
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -51,11 +61,13 @@ public class ScanManager : MonoBehaviour            //스캔은 전투와 대화 등 너무
         Vector2 pointB = new Vector2(1920, -540);
 
         Collider2D[] colliders = Physics2D.OverlapAreaAll(pointA, pointB);
+        int npcLayer = LayerMask.NameToLayer("Npc");
 
         foreach(var collider in colliders)
         {
-            if(collider.gameObject.layer == LayerMask.GetMask("NPC"))
+            if (collider.gameObject.layer == npcLayer)
             {
+                if(collider.gameObject.CompareTag("NPC"))
                 objs.Add(collider.gameObject);
             }
         }
@@ -63,18 +75,23 @@ public class ScanManager : MonoBehaviour            //스캔은 전투와 대화 등 너무
         return objs;
     }
 
+
+
+
     //내 바로 앞 스캔 -> 대화
     public GameObject Scan(Vector2 origin)
     {
-        RaycastHit2D hit = Physics2D.Raycast(origin, direction, 1f, LayerMask.GetMask("Npc"));
+        //RaycastHit2D hit = Physics2D.Raycast(origin, direction, 1f, LayerMask.GetMask("Npc"));
+        RaycastHit2D circleHit = Physics2D.CircleCast(origin, 1f, direction, 1f, LayerMask.GetMask("Npc"));
+
         Debug.DrawRay(origin, direction, Color.black);
-        if(hit.collider == null)
+        if(circleHit.collider == null)
         {
             return null;
         }
         else
         {
-            return hit.collider.gameObject;
+            return circleHit.collider.gameObject;
         }
     }
 }

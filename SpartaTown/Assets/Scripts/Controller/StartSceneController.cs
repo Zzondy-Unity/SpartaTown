@@ -51,7 +51,6 @@ public class StartSceneController : MonoBehaviour
     private void GoTown()
     {
         GameManager.Instance.GameStart(playerName, inputid);
-        GameManager.Instance.TimeReset();
     }
 
 }

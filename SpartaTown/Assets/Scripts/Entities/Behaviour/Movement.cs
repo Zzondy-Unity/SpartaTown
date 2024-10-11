@@ -3,21 +3,18 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private UIManager uiManager;
-    
-    private PlayerInputController controller;
+
+    private TopDownController controller;
     private Rigidbody2D rgbody;
-    private PlayerStatHandler statHandler;
-    private PlayerAction playerAction;
+    private StatHandler statHandler;
 
     private Vector2 movementdirection = Vector2.zero;
 
     private void Awake()
     {
-        controller = GetComponent<PlayerInputController>();
+        controller = GetComponent<TopDownController>();
         rgbody = GetComponent<Rigidbody2D>();
-        statHandler = GetComponent<PlayerStatHandler>();
-        playerAction = GetComponent<PlayerAction>();
+        statHandler = GetComponent<StatHandler>();
     }
 
     private void Start()
@@ -27,14 +24,12 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(playerAction.isAction || uiManager.isMenu)
+        if (GameManager.Instance.isAction || GameManager.Instance.isMenu)
         {
             rgbody.velocity = Vector2.zero;
         }
         else
-        {
             ApplyMoveDirection(movementdirection);
-        }
     }
 
     public void Move(Vector2 direction)

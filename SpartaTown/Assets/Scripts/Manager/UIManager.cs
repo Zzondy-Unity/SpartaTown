@@ -32,12 +32,11 @@ public class UIManager : MonoBehaviour
 
     private Animator menuAnimator;
     private Animator characterAnimator;
-    private PlayerStatHandler statHandler;
+    private StatHandler statHandler;
 
     private int newJobId = -1;
     private string newName = "";
     private int checkPeople;
-    public bool isMenu = false;
 
     private List<GameObject> selectedNpcs;
 
@@ -46,7 +45,7 @@ public class UIManager : MonoBehaviour
     {
         menuAnimator = MenuPanel.GetComponent<Animator>();
         characterAnimator = selected.GetComponentInChildren<Animator>();
-        statHandler = GameObject.Find("Player").GetComponent<PlayerStatHandler>();
+        statHandler = GameObject.Find("Player").GetComponent<StatHandler>();
     }
 
     private void Start()
@@ -63,15 +62,15 @@ public class UIManager : MonoBehaviour
 
     public void OnMenuClicked()
     {
-        if(isMenu == false)
+        if(GameManager.Instance.isMenu == false)
         {
-            isMenu = true;
+            GameManager.Instance.isMenu = true;
             BackGrounUI.SetActive(true);
             menuAnimator.SetBool("isOpen", true);
         }
         else
         {
-            isMenu = false;
+            GameManager.Instance.isMenu = false;
             BackGrounUI.SetActive(false);
             menuAnimator.SetBool("isOpen", false);
         }
@@ -131,7 +130,7 @@ public class UIManager : MonoBehaviour
         writeNameUI.SetActive(false);
         selected.SetActive(false);
         backGround.SetActive(false);
-        isMenu = false;
+        GameManager.Instance.isMenu = false;
     }
 
 }
