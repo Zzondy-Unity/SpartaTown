@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class PlayerAction : MonoBehaviour
     public int dialogIndex = 0;
     public GameObject scaned;
 
+    public event Action OnTalkToBoxCat;
 
     private void Update()
     {
@@ -22,6 +24,7 @@ public class PlayerAction : MonoBehaviour
             }
             else Debug.Log("오브젝트가 null입니다.");
         }
+
     }
 
     public void Action(GameObject scanObj)
@@ -49,6 +52,10 @@ public class PlayerAction : MonoBehaviour
         if (isNpc)
         {
             dialogTxt.text = dialog;
+            if(id == 1000)
+            {
+                OnTalkToBoxCat?.Invoke();
+            }
         }
         else
         {

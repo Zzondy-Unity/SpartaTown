@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 1807821351}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1631,7 +1631,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   userName: "\uC548\uB155\uD558\uC138\uC694"
   jobId: 0
-  playerTag: Player
+  isMenu: 0
+  isAction: 0
 --- !u!4 &1807821352
 Transform:
   m_ObjectHideFlags: 0

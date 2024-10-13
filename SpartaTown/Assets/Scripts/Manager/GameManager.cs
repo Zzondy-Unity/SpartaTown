@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int jobId = 0;
     public bool isMenu = false;
     public bool isAction = false;
+    public bool CommunicatedWithBoxCat = false;
 
     public static GameManager Instance
     {
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        Player = GameObject.FindGameObjectWithTag("Player").transform;
+        PlayerInit();
 
         if (instance == null)
         {
@@ -50,6 +51,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        PlayerInit();
+    }
+
+    public void PlayerInit()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
     private void Update()
     {
