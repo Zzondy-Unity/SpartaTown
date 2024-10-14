@@ -8,8 +8,8 @@ public class PlayerAction : MonoBehaviour
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private Text dialogTxt;
 
-    public int dialogIndex = 0;
     public GameObject scaned;
+    private int dialogIndex = 0;
 
     public event Action OnTalkToBoxCat;
 
@@ -22,9 +22,7 @@ public class PlayerAction : MonoBehaviour
             {
                 Action(scanObject);
             }
-            else Debug.Log("오브젝트가 null입니다.");
         }
-
     }
 
     public void Action(GameObject scanObj)

@@ -32,14 +32,13 @@ public class MonsterMovementController : MonsterController
         if(rangeAttackSO != null && distance <= rangeAttackSO.AttackRange)
         {
             CallMoveEvent(Vector2.zero);
-            Debug.Log("목표를 포착했다.");
         }
         else
         {
-            Flip(direction);
             direction = direction * statHandler.CurrentStat.speed;
             CallMoveEvent(direction);
         }
+        Flip(direction);
     }
 
 

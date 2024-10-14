@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - EnterBattle
   - Stone_left
+  - UI
   layers:
   - Default
   - TransparentFX

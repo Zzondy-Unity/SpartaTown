@@ -17,6 +17,7 @@ public class MeleeWeaponController : MonoBehaviour
     }
 
     //내 주위를 회전하는 물건
+    //Vector의 Rotate함수 활용할 예정
     private void CircleMove()
     {
         float angleStep = 360 / numberOfMelee;

@@ -24,12 +24,10 @@ public class MonsterController : TopDownController
 
     private void SetTarget()
     {
-        Debug.Log($"{gameManager}, {gameManager.Player}");
         if (gameManager != null && gameManager.Player != null)
         {
             Target = gameManager.Player.transform;
         }
-        else Debug.Log("타겟 셋 실패");
 
     }
 
@@ -46,11 +44,6 @@ public class MonsterController : TopDownController
 
     public Vector2 DirectionToTarget()
     {
-        if(Target == null)
-        {
-            Debug.Log("타겟이 없다.");
-        }
-        Debug.Log($"타겟 포지션 : { Target.position} / 스크립트위치{ transform.position}");
         return (Target.position - transform.position).normalized;
     }
 }

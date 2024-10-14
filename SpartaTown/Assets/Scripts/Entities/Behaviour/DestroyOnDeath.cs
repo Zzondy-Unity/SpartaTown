@@ -6,12 +6,14 @@ public class DestroyOnDeath : MonoBehaviour
     HealthSystem healthSystem;
     Rigidbody2D rgbody;
     Animator animator;
+    Collider2D col;
 
     private void Awake()
     {
         healthSystem = GetComponent<HealthSystem>();
         rgbody = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        col = col.GetComponent<Collider2D>();
     }
 
     private void Start()
@@ -33,5 +35,6 @@ public class DestroyOnDeath : MonoBehaviour
     private void Disappear()
     {
         gameObject.SetActive(false);
+        col.isTrigger = true; //플레이어와 부딪히지 않고
     }
 }

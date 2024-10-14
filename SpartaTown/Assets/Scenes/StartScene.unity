@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 1807821351}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1633,6 +1633,7 @@ MonoBehaviour:
   jobId: 0
   isMenu: 0
   isAction: 0
+  CommunicatedWithBoxCat: 0
 --- !u!4 &1807821352
 Transform:
   m_ObjectHideFlags: 0

@@ -38,7 +38,6 @@ public class StatHandler : MonoBehaviour
 
     public void ChangeName(string newName)
     {
-        Debug.Log(newName);
         if (newName == null) return;
         else
         {

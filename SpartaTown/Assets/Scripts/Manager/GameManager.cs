@@ -55,11 +55,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -68,6 +64,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerInit()
     {
+        if(!(SceneManager.GetActiveScene().name == "StartScene"))
         Player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 

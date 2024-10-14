@@ -401,6 +401,7 @@
 "Assets/Scripts/Entities/HealthSystem/HealthSystem.cs"
 "Assets/Scripts/Entities/Stat/Stat.cs"
 "Assets/Scripts/Entities/Stat/StatHandler.cs"
+"Assets/Scripts/Manager/BattleSceneUI.cs"
 "Assets/Scripts/Manager/DialogManager.cs"
 "Assets/Scripts/Manager/GameManager.cs"
 "Assets/Scripts/Manager/PoolManager.cs"

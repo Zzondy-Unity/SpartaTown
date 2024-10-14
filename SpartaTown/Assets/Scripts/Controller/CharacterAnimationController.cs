@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class CharacterAnimationController : AnimationController
 {
+    //아직 왜 StringToHsh를 해야하는지는 아직 모르겠다.
     private static readonly int isWalk = Animator.StringToHash("isWalk");
 
     private readonly float magnitutueThreshold = 0.5f;
 
-    //플레이어 정보에다가 나중에 다시 쓸 예정
     public RuntimeAnimatorController[] animCon;
 
     protected override void Awake()

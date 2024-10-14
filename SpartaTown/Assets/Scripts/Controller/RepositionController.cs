@@ -18,10 +18,10 @@ public class RepositionController : MonoBehaviour
 
     private void Start()
     {
-        controller.OnMoveEvent += inpoutDirection;
+        controller.OnMoveEvent += inputDirection;
     }
 
-    public void inpoutDirection(Vector2 direction)
+    public void inputDirection(Vector2 direction)
     {
         MoveDirection = direction;
     }

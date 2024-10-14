@@ -12,6 +12,15 @@ public class EnterHouse : MonoBehaviour
         playerAction = GetComponent<PlayerAction>();
     }
 
+    private void Update()
+    {
+        if (GameManager.Instance.CommunicatedWithBoxCat == true)
+        {
+            Destroy(QuestMark);
+            Destroy(GameObject.FindWithTag("Stone_left"));
+        }
+    }
+
     private void Start()
     {
         QuestMark.SetActive(false);
@@ -20,8 +29,7 @@ public class EnterHouse : MonoBehaviour
 
     private void QuestAccept()
     {
-        Destroy(QuestMark);
-        Destroy(GameObject.FindWithTag("Stone_left"));
+        GameManager.Instance.CommunicatedWithBoxCat = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,10 +42,9 @@ public class EnterHouse : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("EnterBoxCatHouse"))
+        if (collision.gameObject.CompareTag("EnterBoxCatHouse") && QuestMark)
         {
-            if (QuestMark)
-                QuestMark.SetActive(true);
+            QuestMark.SetActive(true);
         }
     }
 
