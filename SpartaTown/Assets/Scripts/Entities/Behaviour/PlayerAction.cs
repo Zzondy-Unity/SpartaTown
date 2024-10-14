@@ -28,7 +28,7 @@ public class PlayerAction : MonoBehaviour
     public void Action(GameObject scanObj)
     {
         scaned = scanObj;
-        ObjData objData = scanObj.GetComponentInParent<ObjData>();
+        ObjData objData = scaned.GetComponentInParent<ObjData>();
 
         if (objData != null)
             Talk(objData.id, objData.isNpc);
